@@ -1,6 +1,6 @@
 {
   "name": "darktide-weapons-collector",
-  "homepage": "[http://sarranti.github.io/darktide-weapons-collector](http://sarranti.github.io/darktide-weapons-collector)",
+  "homepage": "https://sarranti.github.io/darktide-weapons-collector",
   "private": true,
   "version": "1.0.0",
   "type": "module",
