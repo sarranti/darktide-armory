@@ -51,7 +51,6 @@ export default function App() {
 
   const fetchWeapons = async () => {
     if (!sheetId) return alert("Please enter your Spreadsheet ID");
-
     await ensureAuth();
 
     setIsLoading(true);
