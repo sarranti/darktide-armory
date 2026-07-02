@@ -20,7 +20,8 @@ const getExcelColumnName = (colIndex) => {
 };
 
 export default function App() {
-  const { isAuthenticated, login, tokenExpiry, silentRefresh } = useGoogleSheets();
+  const { isAuthenticated, login, tokenExpiry, silentRefresh } =
+    useGoogleSheets();
   const [sheetId, setSheetId] = useState(
     localStorage.getItem("darktide_sheet_id") || "",
   );
@@ -98,7 +99,12 @@ export default function App() {
       if (rawType === "TRUE" || rawType === "M") itemType = "Melee";
       else if (rawType === "C" || rawType === "CURIO") itemType = "Curio";
 
-      const isOptimal = isOptimalValue(optimalString, activeClass, itemType, Object.keys(classMap));
+      const isOptimal = isOptimalValue(
+        optimalString,
+        activeClass,
+        itemType,
+        Object.keys(classMap),
+      );
 
       return {
         rowIndex: index + 2,
@@ -190,12 +196,16 @@ export default function App() {
   };
 
   const toggleOptimalStatus = async (weapon) => {
-
     let newValue = "";
 
     await ensureAuth();
 
-    newValue = toggleOptimalValue(weapon.rawOptimalString, activeClass, weapon.itemType, Object.keys(classMap));
+    newValue = toggleOptimalValue(
+      weapon.rawOptimalString,
+      activeClass,
+      weapon.itemType,
+      Object.keys(classMap),
+    );
 
     try {
       await window.gapi.client.sheets.spreadsheets.values.update({
