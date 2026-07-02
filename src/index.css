@@ -204,6 +204,18 @@ button:disabled {
   padding-bottom: 5px;
 }
 
+.section-title {
+  color: var(--accent);
+  font-size: 2 rem;
+  font-family: monospace;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin: 0 0 10px 0;
+  border-bottom: 1px dashed #444;
+  padding-bottom: 5px;
+  padding-left: 20px;
+}
+
 /* Compact Clickable Rows */
 .compact-list {
   padding: 8px;
