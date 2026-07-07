@@ -85,6 +85,7 @@ button:disabled {
 .main-nav {
   display: flex;
   gap: 5px;
+  padding: 0 10px;
 }
 
 .main-nav button {
@@ -138,6 +139,44 @@ button:disabled {
   gap: 8px;
   cursor: pointer;
   margin-top: auto;
+}
+
+.card-controls {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  margin-top: auto;
+}
+
+.status-btn {
+  flex: 1 1 auto;
+  min-width: 0;
+  padding: 8px 10px;
+  white-space: nowrap;
+}
+
+.count-picker {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  flex-shrink: 0;
+}
+
+.count-picker label {
+  font-size: 0.85rem;
+  color: #aaa;
+}
+
+.count-picker input {
+  width: 56px;
+  min-width: 56px;
+  padding: 6px 8px;
+  text-align: center;
+  border-radius: 4px;
+  border: 1px solid #444;
+  background: #222;
+  color: white;
 }
 
 /* --- Optimal Star Toggle --- */
@@ -206,7 +245,7 @@ button:disabled {
 
 .section-title {
   color: var(--accent);
-  font-size: 2 rem;
+  font-size: 1.1rem;
   font-family: monospace;
   letter-spacing: 1px;
   text-transform: uppercase;
@@ -214,6 +253,69 @@ button:disabled {
   border-bottom: 1px dashed #444;
   padding-bottom: 5px;
   padding-left: 20px;
+}
+
+.about-page {
+  padding: 24px 24px 40px;
+  max-width: 900px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.about-page h1,
+.about-page h2 {
+  margin-bottom: 12px;
+}
+
+.about-page p,
+.about-page li,
+.about-page code {
+  line-height: 1.6;
+}
+
+.about-page ol,
+.about-page ul {
+  padding-left: 1.25rem;
+}
+
+.about-page code {
+  display: inline-block;
+  margin-top: 8px;
+  padding: 4px 8px;
+  border-radius: 6px;
+  background: rgba(255, 255, 255, 0.06);
+}
+
+.about-donation {
+  margin: 24px 0 8px;
+  padding-top: 18px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  text-align: center;
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.about-donation span {
+  color: #cfcfcf;
+  font-size: 0.95rem;
+}
+
+.donation-link {
+  display: inline-block;
+  padding: 8px 14px;
+  border: 1px solid rgba(212, 175, 55, 0.35);
+  border-radius: 999px;
+  color: var(--accent);
+  text-decoration: none;
+  font-size: 0.95rem;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.donation-link:hover {
+  background-color: rgba(212, 175, 55, 0.12);
+  color: #f0d27a;
 }
 
 /* Compact Clickable Rows */

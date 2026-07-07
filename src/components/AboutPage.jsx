@@ -2,11 +2,12 @@ import React from "react";
 
 const AboutPage = () => (
   <div className="about-page">
-    <h1>Welcome to the Arsenal Tracker</h1>
+    <h1>Welcome to the Darktide Armory</h1>
     <p>
       This tool helps you manage your Darktide weapon collection by syncing with
       your Google Sheets.
     </p>
+
     <div className="setup-steps">
       <h2>Getting Started</h2>
       <ol>
@@ -47,6 +48,19 @@ const AboutPage = () => (
           </ul>
         </li>
       </ol>
+    </div>
+        <div className="about-donation">
+          <span>
+            If you find this tool useful, consider supporting its development  
+          </span>
+      <a
+        href="https://buymeacoffee.com/sarranti"
+        target="_blank"
+        rel="noreferrer"
+        className="donation-link"
+      >
+        Support this project
+      </a>
     </div>
   </div>
 );
