@@ -16,7 +16,7 @@ const AboutPage = () => (
           create one by making a copy of the default template in your google
           drive:{" "}
           <a
-            href="https://docs.google.com/spreadsheets/d/1jwscnYcFndVzskmI3o8rbh9yRjyb5hEU3XJj6B326hU/edit?usp=sharing"
+            href="https://docs.google.com/spreadsheets/d/1PesYeGrPRfMkwJP-Qwes2IR_vOaVpvtYUIR3VGi58tY/edit?usp=sharing"
             target="_blank"
             rel="noreferrer"
           >
@@ -40,10 +40,10 @@ const AboutPage = () => (
               string in the URL of your Google Sheet. For example, in the URL:
               <br />
               <code>
-                https://docs.google.com/spreadsheets/d/1jwscnYcFndVzskmI3o8rbh9yRjyb5hEU3XJj6B326hU/edit
+                https://docs.google.com/spreadsheets/d/1PesYeGrPRfMkwJP-Qwes2IR_vOaVpvtYUIR3VGi58tY/edit?usp=sharing
               </code>
               <br />
-              The Sheet ID is: <code>1jwscnYcFndVzskmI3o8rbh9yRjyb5hEU3XJj6B326hU</code>
+              The Sheet ID is: <code>1PesYeGrPRfMkwJP-Qwes2IR_vOaVpvtYUIR3VGi58tY</code>
             </li>
           </ul>
         </li>
