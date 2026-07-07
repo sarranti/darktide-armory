@@ -159,24 +159,48 @@ button:disabled {
 .count-picker {
   display: flex;
   align-items: center;
-  gap: 6px;
+  gap: 4px;
   flex-shrink: 0;
+  padding: 3px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.06);
 }
 
-.count-picker label {
-  font-size: 0.85rem;
-  color: #aaa;
+.count-step-btn {
+  width: 20px;
+  height: 20px;
+  padding: 0;
+  border: none;
+  border-radius: 999px;
+  background: #2a2a2a;
+  color: #f0f0f0;
+  font-size: 0.9rem;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.count-step-btn:hover {
+  background: #3a3a3a;
 }
 
 .count-picker input {
-  width: 56px;
-  min-width: 56px;
-  padding: 6px 8px;
+  width: 36px;
+  min-width: 36px;
+  padding: 2px 4px;
   text-align: center;
-  border-radius: 4px;
-  border: 1px solid #444;
-  background: #222;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: #171717;
   color: white;
+  appearance: textfield;
+  -moz-appearance: textfield;
+}
+
+.count-picker input::-webkit-outer-spin-button,
+.count-picker input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
 
 /* --- Optimal Star Toggle --- */

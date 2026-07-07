@@ -55,13 +55,28 @@ export default function WeaponCard({
           {weapon.status === "U" && "🔥 Upgraded"}
         </button>
         <div className="count-picker">
-          <label>Qty:</label>
+          <button
+            type="button"
+            className="count-step-btn"
+            onClick={() => onCountChange(weapon, Math.max(0, Number(weapon.count || 0) - 1))}
+            aria-label={`Decrease quantity for ${weapon.weaponName}`}
+          >
+            −
+          </button>
           <input
             type="number"
             min="0"
             value={weapon.count}
             onChange={(e) => onCountChange(weapon, e.target.value)}
           />
+          <button
+            type="button"
+            className="count-step-btn"
+            onClick={() => onCountChange(weapon, Number(weapon.count || 0) + 1)}
+            aria-label={`Increase quantity for ${weapon.weaponName}`}
+          >
+            +
+          </button>
         </div>
       </div>
     </div>
