@@ -5,5 +5,5 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
   plugins: [react()],
   // MUST match your repository name exactly for GitHub Pages
-  base: '/darktide_weapons_collector/', 
+  base: '/darktide-armory/',
 })

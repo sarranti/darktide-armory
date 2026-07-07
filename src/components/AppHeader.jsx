@@ -9,7 +9,7 @@ export default function AppHeader({
 }) {
   return (
     <header className="app-header">
-      <h1>Armory</h1>
+      <h1>Darktide Armory</h1>
       <div className="connection-bar">
         {!isAuthenticated ? (
           <button onClick={login}>Authenticate with Google</button>

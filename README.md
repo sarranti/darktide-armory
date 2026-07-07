@@ -1,5 +1,5 @@
 # GH Pages deployed here:
-[Darktide Weapon Collector](https://sarranti.github.io/darktide_weapons_collector/)
+[Darktide Armory](https://sarranti.github.io/darktide-armory/)
 
 # To deploy to GH Pages:
 ```bash
